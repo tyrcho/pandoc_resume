@@ -61,7 +61,7 @@ Education
 
 
 
-Others
+Others interests
 ----------------------------------------
 
 * Languages:
