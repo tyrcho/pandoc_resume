@@ -2,17 +2,13 @@
 layout: default
 published: true
 ---
----
-title: resume of Michel Daviot
----
-
-
 Michel Daviot
 ============
 
 ----
 
->  Software architect, agile coach, trainer, scala enthusiast.\
+>  Software architect, agile coach, trainer, scala enthusiast.
+>
 >  Not actively looking for a new job.
 
 ----
