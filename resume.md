@@ -18,7 +18,7 @@ Michel Daviot
 Current position
 ----------
 
-2011 - today : **Software Architect at Worldine (Atos) :**
+2011 - today : **Software Architect at Worldine (Atos)**
 
 
 
@@ -26,10 +26,19 @@ Past Positions
 --------------------
 
 2008 - 2011 : **Technical Architect at Logica (CGI)**
-: *Deployed* Sterling Commerce Order Management solution for **Auchan** and **Sanofi**
-: *Managed* the Java (40p) and Microsoft (6p) skill centers in 2011. **Recruited** 10p
-: *Designed* the ASP.NET solution for AMF. *wrote* the Technical Architecture
-: *Industrialisation* of SOA for Auchan with **Tibco BW 5**
+: Deployed *Sterling Commerce* Order Management solution for *Auchan* and *Sanofi*
+: **Managed** Logica **Java (40p)** and Microsoft (6p) skill centers in 2011. **Recruited** 10p
+: Designed the ASP.NET solution for *AMF*. Wrote the Technical Architecture Document.
+: Industrialisation of SOA for Auchan with *Tibco BW 5*
+
+2005 - 2008 : **Java expert at Ausy**
+: Built topology *Swing* GUI for civil aviation for *Thales*
+
+2001 - 2005 : **Java / JEE developper at Adventec (Altran)**
+: Built Swing/RMI/Websphere solution for *Belgacom (Bruxelles)*
+
+2000 - 2001 : **trainee at Nomino Technologies (LICEF)**
+: Developped client server imagery software for doctors (Visual Basic, Java)
 
 
 
