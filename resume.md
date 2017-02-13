@@ -2,6 +2,10 @@
 layout: default
 published: true
 ---
+---
+title: resume of Michel Daviot
+---
+
 
 Michel Daviot
 ============
