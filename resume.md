@@ -13,20 +13,7 @@ Michel Daviot
 
 ----
 
-Education
----------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
-
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
-
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
 
 Experience
 ----------
@@ -45,6 +32,25 @@ links:
 **That Other Job You Had**
 
 Also with a short description.
+
+Education
+---------
+
+1998-2001
+:   **Engineer**; ENSEEIHT (Toulouse)
+
+    *Mathematics and Computer Science*
+
+2000-2001
+:   **Engineer**; Ecole Polytechnique Montréal - Université de Montréal	
+
+1996-1998
+:   **MPSI-MP\***; Lycée Saint-Louis (Paris)
+
+1993-1996
+:   **Bac S**; Lycée Coubertin (Calais)
+
+
 
 Technical Experience
 --------------------
