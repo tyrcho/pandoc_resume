@@ -23,7 +23,7 @@ Current position
 
 **Coaching** teams in their **agile transition**, including Scrum Masters and Product Owners
 
-Building and delivering **trainings** : Functional Programming in **Scala**, *Gatling*, **Test Driven Development**, **Scrum**, *Business Process* analysis and design with *Activiti* 
+Building and delivering **trainings** : [Functional Programming in **Scala**](https://github.com/tyrcho/fp-scala), *Gatling*, **Test Driven Development**, **Scrum**, *Business Process* analysis and design with *Activiti* 
 
 Giving tooling, development, design, **architecture & methodologies** support 
 
@@ -87,8 +87,8 @@ Education
 
 
 
-Others interests
-----------------------------------------
+Other interests
+----------------
 
 * Languages:
 
@@ -99,9 +99,10 @@ Others interests
 
 * Activities
 
-	* Badminton in a club
+	* Teacher in Engineer Schools ([HEI](http://en.hei.fr/), [ENSG](http://www.ensg.eu/)) : **Functional Programming in Scala**, **Agile & Scrum**
+	* Badminton 
     * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
-    * Games (board, cards, video)
+    * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, video)
 
 ----
 
