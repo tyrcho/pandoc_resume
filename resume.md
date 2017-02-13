@@ -85,18 +85,21 @@ Programming Languages
 
 [ref]: https://github.com/githubuser/superlongprojectname
 
-Extra Section, Call it Whatever You Want
+Others
 ----------------------------------------
 
-* Human Languages:
+* Languages:
 
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
+     * French (native speaker)
+     * English (905 at TOEIC, spoken daily at work)
+     * Spanish (studied at school)
+     * Mandarin Chinese (basics)
 
-* Random tidbit
+* Activities
 
-* Other sort of impressive-sounding thing you did
+	* Badminton in a club
+    * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
+    * Games (board, cards, video)
 
 ----
 
