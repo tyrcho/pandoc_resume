@@ -19,7 +19,9 @@ Current position
 ----------
 
 2011 - today 
-: **Software Architect at Worldine (Atos)**, in a transversal team supporting development projects
+: **Software Architect** at Worldine (Atos)
+
+In a transversal team supporting development projects
 
 **Coaching** teams in their **agile transition**, including Scrum Masters and Product Owners
 
@@ -34,7 +36,7 @@ Past Positions
 --------------------
 
 2008 - 2011 
-: **Technical Architect at Logica (CGI)**
+: **Technical Architect** at Logica (CGI)
 
 Deployed *Sterling Commerce* Order Management solution for *Auchan* and *Sanofi*
 
@@ -46,19 +48,19 @@ Industrialisation of SOA for Auchan with *Tibco BW 5*
 
 
 2005 - 2008 
-: **Java expert at Ausy**
+: **Java expert** at Ausy
 
 Built topology *Swing* GUI for civil aviation for *Thales*
 
 
 2001 - 2005
-: **Java / JEE developper at Adventec (Altran)**
+: **Java / JEE developper** at Adventec (Altran)
 
 Built Swing/RMI/Websphere solution for *Belgacom (Bruxelles)*
 
 
 2000 - 2001 
-: **trainee at Nomino Technologies (LICEF)**
+: trainee at Nomino Technologies (LICEF)
 
 Developped client server imagery software for doctors (Visual Basic, Java)
 
@@ -100,6 +102,7 @@ Other interests
 * Activities
 
 	* Teacher in Engineer Schools ([HEI](http://en.hei.fr/), [ENSG](http://www.ensg.eu/)) : **Functional Programming in Scala**, **Agile & Scrum**
+    * Organiser of [Coding Dojos](https://github.com/tyrcho/path-kata)
 	* Badminton 
     * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
     * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, video)
