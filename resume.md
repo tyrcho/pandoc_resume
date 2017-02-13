@@ -19,13 +19,16 @@ Current position
 ----------
 
 2011 - today 
-: **Software Architect at Worldine (Atos)**
+: **Software Architect at Worldine (Atos)**, in a transversal team supporting development projects
 
-Helping customer projects in trouble
+**Coaching** teams in their **agile transition**, including Scrum Masters and Product Owners
 
-Coaching teams in their agile transition, including Scrum Masters and Product Owners
+Building and delivering **trainings** : Functional Programming in **Scala**, *Gatling*, **Test Driven Development**, **Scrum**, *Business Process* analysis and design with *Activiti* 
 
-Building and delivering trainings : Functional Programming in **Scala**, *Gatling*, **Test Driven Development**, **Scrum**, *Activiti* 
+Giving tooling, development, design, **architecture & methodologies** support 
+
+Deployed and supported internal **JEE** framework for payment projects (>500 man years)
+
 
 Past Positions
 --------------------
