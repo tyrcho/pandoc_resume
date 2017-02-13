@@ -100,5 +100,6 @@ Extra Section, Call it Whatever You Want
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <michel@daviot.info> • +33 (6)01 792 792 • 37 years old
+>
+> 26 place du Carnaval - 59 000 Lille, France
