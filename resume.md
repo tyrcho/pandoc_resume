@@ -18,9 +18,14 @@ Michel Daviot
 Current position
 ----------
 
-2011 - today : **Software Architect at Worldine (Atos)**
+2011 - today 
+: **Software Architect at Worldine (Atos)**
 
+Helping customer projects in trouble
 
+Coaching teams in their agile transition, including Scrum Masters and Product Owners
+
+Building and delivering trainings : Functional Programming in **Scala**, *Gatling*, **Test Driven Development**, **Scrum**, *Activiti* 
 
 Past Positions
 --------------------
@@ -58,6 +63,10 @@ Developped client server imagery software for doctors (Visual Basic, Java)
 
 Education
 ---------
+
+2011-2016
+: certified **Scrum Master**, *Product Owner*, **Scrum Developper**
+: **Functional** and *Reactive* Programming (Coursera)
 
 1998-2001
 :   **Engineer**; ENSEEIHT (Toulouse)
