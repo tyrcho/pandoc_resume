@@ -14,11 +14,7 @@ h1 {
     text-align:center;
     margin-bottom:15px;
 }
-h1:hover {
-    background-color: #757575;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 1px #333;
-}
+
 
 /* Titles of categories */
 h2 {
@@ -34,11 +30,6 @@ h2:before {
     height: 10px;
     /* This is called "rulecolor" in the ConTeXt stylesheet. */
     background-color: #9CB770;
-}
-h2:hover {
-    background-color: #397249;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 1px #333;
 }
 
 /* Definitions */
@@ -77,4 +68,3 @@ a:hover, a:active {
 hr {
     color: #A6A6A6;
 }
-
