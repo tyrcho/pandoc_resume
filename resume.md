@@ -19,15 +19,15 @@ Current position
 ----------
 
 2011 - today 
-: **Software Architect** at Worldine (Atos)
+: **Software Architect, Trainer, Agile Coach** at Worldine (Atos)
 
 In a transversal team supporting development projects
 
-**Coaching** teams in their **agile transition**, including Scrum Masters and Product Owners
+**Coach** for teams in their **agile transition**, including Scrum Masters and Product Owners
 
-Building and delivering **trainings** : [Functional Programming in **Scala**](https://github.com/tyrcho/fp-scala), *Gatling*, **Test Driven Development**, **Scrum**, *Business Process* analysis and design with *Activiti* 
+Prepared and provided (100d in total) **trainings**: **Agile** Awareness, **Scrum Master**, **Test Driven Development**, *Refactoring*, [Functional Programming in **Scala**](https://github.com/tyrcho/fp-scala), *Gatling*,  *Business Process* analysis and design with *Activiti* 
 
-Giving tooling, development, design, **architecture & methodologies** support 
+Tooling, **automation**, *development*, design, **architecture & methodologies** consulting and support (internal)
 
 Deployed and supported internal **JEE** framework for payment projects (>500 man years)
 
