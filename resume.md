@@ -109,6 +109,6 @@ Other interests
 
 ----
 
-> <michel@daviot.info> • +33 (6)01 792 792 • 37 years old
+> <michel@daviot.info> • +33 (0) 601 792 292 • 37 years old
 >
 > 26 place du Carnaval - 59 000 Lille, France
