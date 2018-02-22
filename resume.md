@@ -104,7 +104,6 @@ Other interests
 	* Teacher in Engineer Schools ([HEI](http://en.hei.fr/), [ENSG](http://www.ensg.eu/)) : **Functional Programming in Scala**, **Agile & Scrum**
     * Organiser of [Coding Dojos](https://github.com/tyrcho/path-kata)
     * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
-    * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
     * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, video)
 
 ----
