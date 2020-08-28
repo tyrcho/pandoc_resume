@@ -22,7 +22,7 @@ Current position
 2018 - today
 : **Chief Technical Officer** at [Colisweb](https://www.colisweb.com)
 
-**Managing** ([3.0](https://management30.com/)) technical team of 10 who runs, evolves and optimizes the software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
+**Managing** ([3.0](https://management30.com/)) product department: 15p who design, build, optimize and run software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
 
 Designing product and technical strategy, from *legacy* and *technical debt* control to *operational research* and [VRP](https://en.wikipedia.org/wiki/Vehicle_routing_problem).
 
@@ -60,13 +60,13 @@ Industrialisation of SOA for Auchan with *Tibco BW 5*
 2005 - 2008 
 : **Java expert** at Ausy
 
-Built topology *Swing* GUI for civil aviation for *Thales*
+Built topology *Swing* GUI for civil aviation at *Thales*
 
 
 2001 - 2005
 : **Java / JEE developper** at Adventec (Altran)
 
-Built Swing/RMI/Websphere solution for *Belgacom (Bruxelles)*
+Built Swing/RMI/Websphere solution at *Belgacom (Bruxelles)*
 
 
 2000 - 2001 
@@ -105,19 +105,19 @@ Other interests
 * Languages:
 
      * French (native speaker)
-     * English (905 at TOEIC, spoken daily at work)
+     * English (905 at TOEIC, spoken daily at work for 15 years)
      * Spanish (studied at school)
      * Mandarin Chinese (basics)
 
 * Activities
 
-	* Teacher in Engineer Schools ([HEI](http://en.hei.fr/), [ENSG](http://www.ensg.eu/)) : **Functional Programming in Scala**, **Agile & Scrum** 2015-2018
+    * Teacher in Engineer Schools ([HEI](http://en.hei.fr/), [ENSG](http://www.ensg.eu/)) : **Functional Programming in Scala**, **Agile & Scrum** 2015-2018
     * Organiser of [Coding Dojos](https://github.com/tyrcho/path-kata)
     * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
-    * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, video)
+    * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, video, racket sports)
 
 ----
 
-> <michel@daviot.info> • +33 (0) 601 792 292 • 39 years old
+> <michel@daviot.info> • +33 (0) 601 792 292 • 40 years old
 >
 > 26 place du Carnaval - 59 000 Lille, France
