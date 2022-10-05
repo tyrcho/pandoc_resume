@@ -22,7 +22,7 @@ Current position
 2018 - today
 : **Chief Technical Officer** at [Colisweb](https://www.colisweb.com)
 
-**Managing** ([3.0](https://management30.com/)) product department: 15p who design, build, optimize and run software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
+**Managing** ([3.0](https://management30.com/)) product & innovation department: 20p who design, build, optimize and run software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
 
 Designing product and technical strategy, from *legacy* and *technical debt* control to *operational research* and [VRP](https://en.wikipedia.org/wiki/Vehicle_routing_problem).
 
@@ -114,10 +114,10 @@ Other interests
     * Teacher in Engineer Schools ([HEI](http://en.hei.fr/), [ENSG](http://www.ensg.eu/)) : **Functional Programming in Scala**, **Agile & Scrum** 2015-2018
     * Organiser of [Coding Dojos](https://github.com/tyrcho/path-kata)
     * Competitive programming ([CodinGame](https://www.codingame.com/profile/e30e2eaed69f0747e8826dbf32015ea1229103) ...)
-    * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, video, racket sports)
+    * Games ([board](https://fr.boardgamearena.com/#!player?id=5933447), cards, TTRPG, video, racket sports)
 
 ----
 
-> <michel@daviot.info> • +33 (0) 601 792 292 • 40 years old
+> <michel@daviot.info> • +33 (0) 601 792 292 • 42 years old
 >
 > 26 place du Carnaval - 59 000 Lille, France
