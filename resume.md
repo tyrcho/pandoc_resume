@@ -79,6 +79,9 @@ Developped client-server imagery software for doctors (Visual Basic, Java)
 Education
 ---------
 
+2022
+: Lean Management (green belt training)
+
 2011-2016
 : certified **Scrum Master**, *Product Owner*, **Scrum Developper**
 : **Functional** and *Reactive* Programming (Coursera)
@@ -118,6 +121,6 @@ Other interests
 
 ----
 
-> <michel@daviot.info> • +33 (0) 601 792 292 • 42 years old
+> <michel@daviot.info> • +33 (0) 601 792 292 • 43 years old
 >
 > 26 place du Carnaval - 59 000 Lille, France
