@@ -9,7 +9,9 @@ Michel Daviot
 ----
 
 > Engineering Manager
+>
 > former CTO, architect, agile coach, trainer
+>
 > Not actively looking for a new job.
 
 ----
