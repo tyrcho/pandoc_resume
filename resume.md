@@ -8,18 +8,29 @@ Michel Daviot
 
 ----
 
->  CTO, architect, agile coach, trainer, scala and [FP](https://en.wikipedia.org/wiki/Functional_programming) enthusiast.
->
->  Not actively looking for a new job.
+> Engineering Manager
+> former CTO, architect, agile coach, trainer
+> Not actively looking for a new job.
 
 ----
 
 
 
 Current position
-----------
+--------------------
 
-2018 - today
+2023 - today
+: **Engineering Manager** at [Datadog](https://www.datadoghq.com/)
+
+**Managing** AWS Integrations team: 4 engineers who design, build (**Go**, python, java), deploy and operate (**Kubernetes**, Bazel) the services which gather resources from **AWS** APIs and forward logs from managed services into Datadog systems.
+
+Prioritizing feature requests from product management and connected product teams (security, cloud costs ...) together with technical enablers and debt.
+
+
+Past Positions
+--------------------
+
+2018 - 2023
 : **Chief Technical Officer** at [Colisweb](https://www.colisweb.com)
 
 **Managing** ([3.0](https://management30.com/)) product & innovation department: 20p who design, build, optimize and run software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
@@ -28,9 +39,6 @@ Designing product and technical strategy, from *legacy* and *technical debt* con
 
 Helping other teams and managers in scaling up the startup.
 
-
-Past Positions
---------------------
 
 2011 - 2018 
 : **Software Architect, Trainer, Agile Coach** at Worldine (Atos)
