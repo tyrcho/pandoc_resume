@@ -1,10 +1,24 @@
 /* Whole document */
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     background: #FFFFFF;
     padding: 10px 10px 10px 10px;
+}
+
+.download-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 18px;
+    font-size: 14px;
+}
+
+.download-links a {
+    border: 1px solid #9CB770;
+    border-radius: 999px;
+    padding: 6px 14px;
 }
 
 /* Title of the resume */
@@ -67,4 +81,10 @@ a:hover, a:active {
 /* Horizontal separators */
 hr {
     color: #A6A6A6;
+}
+
+@media print {
+    .download-links {
+        display: none;
+    }
 }
