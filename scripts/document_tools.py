@@ -7,15 +7,14 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
-import sys
 import tempfile
+import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
-import re
-import xml.etree.ElementTree as ET
-import yaml
 
+import yaml
 
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 ET.register_namespace("w", WORD_NS)
@@ -36,7 +35,10 @@ def read_front_matter(path: Path) -> dict[str, str]:
     if not isinstance(loaded, dict):
         raise ValueError("Front matter must be a YAML mapping.")
 
-    return {str(key): "" if value is None else str(value) for key, value in loaded.items()}
+    return {
+        str(key): "" if value is None else str(value)
+        for key, value in loaded.items()
+    }
 
 
 def margin_to_twips(margin: str) -> str:
@@ -101,7 +103,11 @@ def set_docx_margins(docx_path: Path, margin_twips: str) -> None:
         tree.write(document_xml, encoding="UTF-8", xml_declaration=True)
 
         rebuilt_path = tmpdir_path / "rebuilt.docx"
-        with zipfile.ZipFile(rebuilt_path, "w", compression=zipfile.ZIP_DEFLATED) as target_zip:
+        with zipfile.ZipFile(
+            rebuilt_path,
+            "w",
+            compression=zipfile.ZIP_DEFLATED,
+        ) as target_zip:
             for path in sorted(tmpdir_path.rglob("*")):
                 if path == rebuilt_path or path.is_dir():
                     continue

@@ -4,7 +4,7 @@ DIST_DIR := dist
 TEMPLATE := templates/resume.html5
 RESUME_SRC := resume.md
 
-.PHONY: all html pdf docx test clean deps check-deps check-pandoc check-pdf-engine check-python-yaml
+.PHONY: all html pdf docx test lint clean deps check-deps check-pandoc check-pdf-engine check-python-yaml check-ruff
 
 all: check-pandoc check-pdf-engine check-python-yaml html pdf docx $(DIST_DIR)/index.html $(DIST_DIR)/css/resume.css $(DIST_DIR)/.nojekyll $(DIST_DIR)/CNAME
 
@@ -17,11 +17,14 @@ docx: check-pandoc check-python-yaml $(DIST_DIR)/resume.docx
 test:
 	python3 -m unittest discover -s tests -v
 
+lint: check-ruff
+	python3 -m ruff check scripts tests
+
 deps:
 	@echo "Tested local setup on macOS:"
 	@echo "  brew install pandoc"
 	@echo "  brew install tectonic"
-	@echo "  python3 -m pip install PyYAML"
+	@echo "  python3 -m pip install PyYAML ruff"
 	@echo ""
 	@echo "Alternative: brew install --cask mactex-no-gui"
 	@echo "Note: mactex-no-gui is a large download and install."
@@ -31,6 +34,7 @@ check-deps:
 	@$(MAKE) check-pandoc
 	@$(MAKE) check-pdf-engine
 	@$(MAKE) check-python-yaml
+	@$(MAKE) check-ruff
 
 check-pandoc:
 	@command -v $(PANDOC) >/dev/null || (echo "Missing dependency: $(PANDOC). Run 'make deps' for install hints."; exit 1)
@@ -40,6 +44,9 @@ check-pdf-engine:
 
 check-python-yaml:
 	@python3 -c "import yaml" >/dev/null 2>&1 || (echo "Missing Python dependency: PyYAML. Run 'make deps' for install hints."; exit 1)
+
+check-ruff:
+	@python3 -m ruff --version >/dev/null 2>&1 || (echo "Missing Python dependency: ruff. Run 'make deps' for install hints."; exit 1)
 
 clean:
 	rm -rf $(DIST_DIR)

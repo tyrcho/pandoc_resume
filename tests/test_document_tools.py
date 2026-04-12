@@ -1,10 +1,14 @@
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
-import xml.etree.ElementTree as ET
 
-from scripts.document_tools import WORD_NS, get_metadata_value, set_docx_margins
+from scripts.document_tools import (
+    WORD_NS,
+    get_metadata_value,
+    set_docx_margins,
+)
 
 
 class DocumentToolsTest(unittest.TestCase):
@@ -34,13 +38,19 @@ class DocumentToolsTest(unittest.TestCase):
                 '<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
                 "<w:body>"
                 "<w:p/>"
-                '<w:sectPr><w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440"/></w:sectPr>'
+                '<w:sectPr><w:pgMar w:top="1440" w:right="1440" '
+                'w:bottom="1440" w:left="1440"/></w:sectPr>'
                 "<w:p/>"
-                '<w:sectPr><w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440"/></w:sectPr>'
+                '<w:sectPr><w:pgMar w:top="1440" w:right="1440" '
+                'w:bottom="1440" w:left="1440"/></w:sectPr>'
                 "</w:body>"
                 "</w:document>"
             )
-            with zipfile.ZipFile(docx_path, "w", compression=zipfile.ZIP_DEFLATED) as docx:
+            with zipfile.ZipFile(
+                docx_path,
+                "w",
+                compression=zipfile.ZIP_DEFLATED,
+            ) as docx:
                 docx.writestr("word/document.xml", document_xml)
 
             set_docx_margins(docx_path, "720")
@@ -61,7 +71,10 @@ class DocumentToolsTest(unittest.TestCase):
                     )
                 )
 
-            self.assertEqual(margins, [("720", "720", "720", "720"), ("720", "720", "720", "720")])
+            self.assertEqual(
+                margins,
+                [("720", "720", "720", "720"), ("720", "720", "720", "720")],
+            )
 
 
 if __name__ == "__main__":

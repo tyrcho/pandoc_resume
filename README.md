@@ -14,6 +14,7 @@ Requirements:
 
 - `python3`
 - `PyYAML` for parsing Markdown front matter in `scripts/document_tools.py`
+- `ruff` for Python linting
 - `pandoc`
 - A PDF engine:
   - `tectonic` is the default for local builds in this repository
@@ -24,7 +25,7 @@ Tested local setup on macOS:
 ```bash
 brew install pandoc
 brew install tectonic
-python3 -m pip install PyYAML
+python3 -m pip install PyYAML ruff
 ```
 
 Alternative on macOS:
@@ -47,6 +48,12 @@ To check that the required tools are available:
 
 ```bash
 make check-deps
+```
+
+Run the Python linter:
+
+```bash
+make lint
 ```
 
 Build everything into `dist/`:
@@ -90,10 +97,12 @@ Then open `http://localhost:8000`.
 
 The workflow in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml) does the following on every relevant push to `master`:
 
-1. installs `pandoc` and `tectonic`
-2. runs `make all`
-3. uploads `dist/` as the GitHub Pages artifact
-4. deploys that artifact to GitHub Pages
+1. installs `pandoc`, `python3-yaml`, `texlive-xetex`, and `ruff`
+2. runs `make lint`
+3. runs `make test`
+4. runs `make all PDF_ENGINE=xelatex`
+5. uploads `dist/` as the GitHub Pages artifact
+6. deploys that artifact to GitHub Pages
 
 The published site includes:
 

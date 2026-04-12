@@ -38,6 +38,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc python3-yaml texlive-xetex
+          python3 -m pip install ruff
+
+      - name: Run lint
+        run: make lint
+
+      - name: Run tests
+        run: make test
 
       - name: Build site
         run: make all PDF_ENGINE=xelatex
