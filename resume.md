@@ -1,12 +1,7 @@
 ---
-layout: default
-published: true
-pagetitle: Michel Daviot
+title: Michel Daviot
 margin: 1in
 ---
-
-Michel Daviot
-============
 
 ----
 

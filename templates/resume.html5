@@ -23,6 +23,11 @@ $endfor$
     <a href="resume.pdf">PDF</a>
     <a href="resume.docx">Word</a>
   </div>
+$if(title)$
+  <h1>$title$</h1>
+$elseif(pagetitle)$
+  <h1>$pagetitle$</h1>
+$endif$
 $body$
 </body>
 </html>

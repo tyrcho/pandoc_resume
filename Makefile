@@ -49,7 +49,7 @@ $(DIST_DIR)/resume.html: $(RESUME_SRC) $(TEMPLATE) css/resume.css | $(DIST_DIR)/
 		--output $@ \
 		$<
 
-$(DIST_DIR)/resume.pdf: $(RESUME_SRC) | $(DIST_DIR)
+$(DIST_DIR)/resume.pdf: $(RESUME_SRC) scripts/document_tools.py scripts/latex_center_blockquotes.lua | $(DIST_DIR)
 	$(PANDOC) \
 		--standalone \
 		--pdf-engine=$(PDF_ENGINE) \
@@ -58,7 +58,7 @@ $(DIST_DIR)/resume.pdf: $(RESUME_SRC) | $(DIST_DIR)
 		--output $@ \
 		$<
 
-$(DIST_DIR)/resume.docx: $(RESUME_SRC) | $(DIST_DIR)
+$(DIST_DIR)/resume.docx: $(RESUME_SRC) scripts/document_tools.py | $(DIST_DIR)
 	$(PANDOC) \
 		--standalone \
 		--output $@ \

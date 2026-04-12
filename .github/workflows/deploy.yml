@@ -11,6 +11,7 @@ on:
       - "css/**"
       - "index.html"
       - "resume.md"
+      - "scripts/**"
       - "templates/**"
   workflow_dispatch:
 

@@ -55,6 +55,13 @@ def get_margin(target: str, markdown_path: Path) -> str:
     raise ValueError(f"Unsupported target: {target!r}")
 
 
+def get_metadata_value(key: str, markdown_path: Path) -> str:
+    metadata = read_front_matter(markdown_path)
+    if key == "title":
+        return metadata.get("title") or metadata.get("pagetitle") or ""
+    return metadata.get(key, "")
+
+
 def set_docx_margins(docx_path: Path, margin_twips: str) -> None:
     docx_path = docx_path.resolve()
     with tempfile.TemporaryDirectory() as tmpdir:
@@ -111,6 +118,10 @@ def build_parser() -> argparse.ArgumentParser:
     margin_parser.add_argument("target", choices=["pdf", "docx"])
     margin_parser.add_argument("markdown_path")
 
+    metadata_parser = subparsers.add_parser("metadata")
+    metadata_parser.add_argument("key")
+    metadata_parser.add_argument("markdown_path")
+
     docx_parser = subparsers.add_parser("set-docx-margins")
     docx_parser.add_argument("docx_path")
     docx_parser.add_argument("margin_twips")
@@ -127,6 +138,10 @@ def main() -> int:
 
     if args.command == "margin":
         print(get_margin(args.target, Path(args.markdown_path)))
+        return 0
+
+    if args.command == "metadata":
+        print(get_metadata_value(args.key, Path(args.markdown_path)))
         return 0
 
     if args.command == "set-docx-margins":
