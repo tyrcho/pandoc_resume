@@ -14,6 +14,7 @@ import zipfile
 from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
+import yaml
 
 
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
@@ -21,19 +22,21 @@ ET.register_namespace("w", WORD_NS)
 
 
 def read_front_matter(path: Path) -> dict[str, str]:
-    lines = path.read_text(encoding="utf-8").splitlines()
-    if not lines or lines[0].strip() != "---":
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
         return {}
 
-    metadata: dict[str, str] = {}
-    for line in lines[1:]:
-        if line.strip() == "---":
-            break
-        if ":" not in line:
-            continue
-        key, value = line.split(":", 1)
-        metadata[key.strip()] = value.strip()
-    return metadata
+    match = re.match(r"^---\s*\n(.*?)\n---(?:\s*\n|$)", text, re.DOTALL)
+    if match is None:
+        return {}
+
+    loaded = yaml.safe_load(match.group(1))
+    if loaded is None:
+        return {}
+    if not isinstance(loaded, dict):
+        raise ValueError("Front matter must be a YAML mapping.")
+
+    return {str(key): "" if value is None else str(value) for key, value in loaded.items()}
 
 
 def margin_to_twips(margin: str) -> str:
@@ -73,26 +76,27 @@ def set_docx_margins(docx_path: Path, margin_twips: str) -> None:
         tree = ET.parse(document_xml)
         root = tree.getroot()
 
-        sect_pr = root.find(f".//{{{WORD_NS}}}sectPr")
-        if sect_pr is None:
+        sect_pr_nodes = root.findall(f".//{{{WORD_NS}}}sectPr")
+        if not sect_pr_nodes:
             raise RuntimeError("Could not find <w:sectPr> in document.xml")
 
-        pg_mar = sect_pr.find(f"{{{WORD_NS}}}pgMar")
-        if pg_mar is None:
-            pg_mar = ET.Element(f"{{{WORD_NS}}}pgMar")
-            sect_pr.insert(0, pg_mar)
+        for sect_pr in sect_pr_nodes:
+            pg_mar = sect_pr.find(f"{{{WORD_NS}}}pgMar")
+            if pg_mar is None:
+                pg_mar = ET.Element(f"{{{WORD_NS}}}pgMar")
+                sect_pr.insert(0, pg_mar)
 
-        pg_mar.attrib.update(
-            {
-                f"{{{WORD_NS}}}top": margin_twips,
-                f"{{{WORD_NS}}}right": margin_twips,
-                f"{{{WORD_NS}}}bottom": margin_twips,
-                f"{{{WORD_NS}}}left": margin_twips,
-                f"{{{WORD_NS}}}header": "720",
-                f"{{{WORD_NS}}}footer": "720",
-                f"{{{WORD_NS}}}gutter": "0",
-            }
-        )
+            pg_mar.attrib.update(
+                {
+                    f"{{{WORD_NS}}}top": margin_twips,
+                    f"{{{WORD_NS}}}right": margin_twips,
+                    f"{{{WORD_NS}}}bottom": margin_twips,
+                    f"{{{WORD_NS}}}left": margin_twips,
+                    f"{{{WORD_NS}}}header": "720",
+                    f"{{{WORD_NS}}}footer": "720",
+                    f"{{{WORD_NS}}}gutter": "0",
+                }
+            )
 
         tree.write(document_xml, encoding="UTF-8", xml_declaration=True)
 

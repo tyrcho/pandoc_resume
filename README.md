@@ -12,14 +12,19 @@ GitHub Pages serves the generated files from the Actions build artifact. They ar
 
 Requirements:
 
+- `python3`
+- `PyYAML` for parsing Markdown front matter in `scripts/document_tools.py`
 - `pandoc`
-- `tectonic` for PDF output, which is the default PDF engine in this repository
+- A PDF engine:
+  - `tectonic` is the default for local builds in this repository
+  - `xelatex` is used in GitHub Actions because it is available from Ubuntu packages there
 
 Tested local setup on macOS:
 
 ```bash
 brew install pandoc
 brew install tectonic
+python3 -m pip install PyYAML
 ```
 
 Alternative on macOS:
@@ -69,6 +74,9 @@ If you want to use a different PDF engine temporarily, override it:
 ```bash
 make pdf PDF_ENGINE=xelatex
 ```
+
+CI note:
+GitHub Actions builds the PDF with `PDF_ENGINE=xelatex` and installs `texlive-xetex`, while local builds still default to `tectonic`.
 
 To preview the generated site locally:
 

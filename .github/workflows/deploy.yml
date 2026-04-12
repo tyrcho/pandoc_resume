@@ -37,10 +37,10 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc tectonic
+          sudo apt-get install -y pandoc python3-yaml texlive-xetex
 
       - name: Build site
-        run: make all
+        run: make all PDF_ENGINE=xelatex
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
