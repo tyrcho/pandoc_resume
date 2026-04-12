@@ -12,7 +12,7 @@ $endif$
 $if(description-meta)$
   <meta name="description" content="$description-meta$" />
 $endif$
-  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(title)$$title$$else$Resume$endif$</title>
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(pagetitle)$$pagetitle$$elseif(title)$$title$$else$Resume$endif$</title>
   <link rel="stylesheet" href="css/resume.css" />
 $for(header-includes)$
   $header-includes$

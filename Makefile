@@ -1,28 +1,36 @@
 PANDOC ?= pandoc
-PDF_ENGINE ?= xelatex
+PDF_ENGINE ?= tectonic
 DIST_DIR := dist
 TEMPLATE := templates/resume.html5
 RESUME_SRC := resume.md
-TITLE ?= Michel Daviot
 
-.PHONY: all html pdf docx clean deps check-deps
+.PHONY: all html pdf docx clean deps check-deps check-pandoc check-pdf-engine
 
-all: check-deps html pdf docx $(DIST_DIR)/index.html $(DIST_DIR)/css/resume.css $(DIST_DIR)/.nojekyll $(DIST_DIR)/CNAME
+all: check-pandoc check-pdf-engine html pdf docx $(DIST_DIR)/index.html $(DIST_DIR)/css/resume.css $(DIST_DIR)/.nojekyll $(DIST_DIR)/CNAME
 
 html: $(DIST_DIR)/resume.html
 
-pdf: check-deps $(DIST_DIR)/resume.pdf
+pdf: check-pandoc check-pdf-engine $(DIST_DIR)/resume.pdf
 
-docx: check-deps $(DIST_DIR)/resume.docx
+docx: check-pandoc $(DIST_DIR)/resume.docx
 
 deps:
-	@echo "Install dependencies with one of the following:"
-	@echo "  macOS (Homebrew): brew install pandoc && brew install --cask mactex-no-gui"
-	@echo "  Ubuntu/Debian:    sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex"
-	@echo "  Fedora:           sudo dnf install -y pandoc texlive-xetex"
+	@echo "Tested local setup on macOS:"
+	@echo "  brew install pandoc"
+	@echo "  brew install tectonic"
+	@echo ""
+	@echo "Alternative: brew install --cask mactex-no-gui"
+	@echo "Note: mactex-no-gui is a large download and install."
+	@echo "For other platforms, see https://github.com/mszep/pandoc_resume"
 
 check-deps:
+	@$(MAKE) check-pandoc
+	@$(MAKE) check-pdf-engine
+
+check-pandoc:
 	@command -v $(PANDOC) >/dev/null || (echo "Missing dependency: $(PANDOC). Run 'make deps' for install hints."; exit 1)
+
+check-pdf-engine:
 	@command -v $(PDF_ENGINE) >/dev/null || (echo "Missing PDF engine: $(PDF_ENGINE). Run 'make deps' for install hints."; exit 1)
 
 clean:
@@ -38,7 +46,6 @@ $(DIST_DIR)/resume.html: $(RESUME_SRC) $(TEMPLATE) css/resume.css | $(DIST_DIR)/
 	$(PANDOC) \
 		--standalone \
 		--template $(TEMPLATE) \
-		--metadata title="$(TITLE)" \
 		--output $@ \
 		$<
 
@@ -46,7 +53,8 @@ $(DIST_DIR)/resume.pdf: $(RESUME_SRC) | $(DIST_DIR)
 	$(PANDOC) \
 		--standalone \
 		--pdf-engine=$(PDF_ENGINE) \
-		--metadata title="$(TITLE)" \
+		--lua-filter=scripts/latex_center_blockquotes.lua \
+		--variable geometry:margin="$$(python3 scripts/document_tools.py margin pdf $(RESUME_SRC))" \
 		--output $@ \
 		$<
 
@@ -55,6 +63,7 @@ $(DIST_DIR)/resume.docx: $(RESUME_SRC) | $(DIST_DIR)
 		--standalone \
 		--output $@ \
 		$<
+	python3 scripts/document_tools.py set-docx-margins-from-markdown $@ $(RESUME_SRC)
 
 $(DIST_DIR)/index.html: index.html | $(DIST_DIR)
 	cp $< $@
