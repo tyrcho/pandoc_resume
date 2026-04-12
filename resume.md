@@ -1,12 +1,10 @@
 ---
-title: Michel Daviot
+title: Michel Daviot - Senior Engineering Manager
 margin: 1in
 ---
 
 ----
 
-> Engineering Manager
->
 > former CTO, architect, agile coach, trainer
 >
 > Not actively looking for a new job.
@@ -19,11 +17,13 @@ Current position
 --------------------
 
 2023 - today
-: **Engineering Manager** at [Datadog](https://www.datadoghq.com/)
+: **Senior Engineering Manager** at [Datadog](https://www.datadoghq.com/)
 
-**Managing** AWS Integrations team: 4 engineers who design, build (**Go**, python, java), deploy and operate (**Kubernetes**, Bazel) the services which gather resources from **AWS** APIs and forward logs from managed services into Datadog systems.
+**Managing** 3 Cloud Integrations teams, each of ~7 engineers who design, build (**Go**, python, java), deploy and operate (**Kubernetes**, Bazel) the services which gather metrics, resources from **AWS, Azure, GCP** APIs and forward logs from managed services into Datadog systems.
 
 Prioritizing feature requests from product management and connected product teams (security, cloud costs ...) together with technical enablers and debt.
+
+Promoted and hired various engineers, from interns to engineering managers.
 
 
 Past Positions
@@ -57,7 +57,7 @@ Deployed and supported internal **JEE** framework for payment projects (>500 man
 
 Deployed *Sterling Commerce* Order Management solution for *Auchan* and *Sanofi*
 
-**Managed** Logica **Java (40p)** and Microsoft (6p) skill centers in 2011. **Recruited** 10p
+**Managed** Logica **Java (40p)** and Microsoft (6p) skill centers in 2011. **Hired** 10p
 
 Designed the ASP.NET solution for *AMF*. Wrote the Technical Architecture Document.
 
@@ -79,7 +79,7 @@ Built Swing/RMI/Websphere solution at *Belgacom (Bruxelles)*
 2000 - 2001 
 : trainee at Nomino Technologies (LICEF)
 
-Developped client-server imagery software for doctors (Visual Basic, Java)
+Developped client-server imagery software for doctors (Visual Basic, **Java**)
 
 
 
