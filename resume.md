@@ -23,7 +23,7 @@ Current position
 
 Prioritizing feature requests from product management and connected product teams (security, cloud costs ...) together with technical enablers and debt.
 
-Promoted and hired various engineers, from interns to engineering managers.
+Promoted and hired, from interns to engineering managers.
 
 
 Past Positions
@@ -32,11 +32,11 @@ Past Positions
 2018 - 2023
 : **Chief Technical Officer** at [Colisweb](https://www.colisweb.com)
 
-**Managing** ([3.0](https://management30.com/)) product & innovation department: 20p who design, build, optimize and run software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
+**Managed** ([3.0](https://management30.com/)) product & innovation department: 20p who design, build, optimize and run software with *Ruby*, **Scala**, *React*, *AWS*, **Kubernetes** and **functional programming**.
 
-Designing product and technical strategy, from *legacy* and *technical debt* control to *operational research* and [VRP](https://en.wikipedia.org/wiki/Vehicle_routing_problem).
+Designed product and technical strategy, from *legacy* and *technical debt* control to *operational research* and [VRP](https://en.wikipedia.org/wiki/Vehicle_routing_problem).
 
-Helping other teams and managers in scaling up the startup.
+Helped other teams and managers in scaling up the startup.
 
 
 2011 - 2018 
@@ -128,6 +128,6 @@ Other interests
 
 ----
 
-> <michel@daviot.info> • +33 (0) 601 792 292 • 43 years old
+> <michel@daviot.info> • +33 (0) 601 792 292 
 >
 > 26 place du Carnaval - 59 000 Lille, France
