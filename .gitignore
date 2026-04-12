@@ -2,3 +2,5 @@
 *.swp
 dist/
 *.log
+__pycache__/
+*.py[cod]
